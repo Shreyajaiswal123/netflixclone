@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family:sans-serif;
+}
+.header{
+    width:100vw;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/header-image.png)!important;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding:10px 8%;
+
+
+}
+
+nav{
+ display: flex;
+justify-content:space-between;
+align-items: center;
+padding-top: 15px;
+}
+.logo{
+    width:150px;
+    cursor: pointer;
+
+}
+nav button{
+border:0;
+outline:0;
+cursor:pointer;
+
+background-color: #db0001;
+color: #fff;
+font-size:15px;
+border-radius: 4px;
+margin-left:10px;
+padding:12px;
+
+}
+.language-btn{
+    display: inline-flex;
+    background: transparent;
+    border:1px solid #fff;
+}
+.language-btn img{
+    margin-left:15px;
+    width:12px;
+    margin-top: 4px;
+
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+     transform:translate(-50%, -50%);
+     margin-top: 20px;
+    
+}
+.header-content h1{
+    font-size:50px;
+    font-weight: 600;
+
+    line-height: 70px;
+    width:1000px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 25px;
+
+
+}
+.email-signup{
+    display: flex;
+    justify-content: center;
+    gap:4px;
+    margin: 30px 30px;
+
+
+
+}
+.email-signup input{
+    border:1px solid #fff;
+    width: 400px;
+    height: 50px;
+padding: 10px;
+    border-radius:4px;
+    background: transparent;
+    color: #fff;
+
+}
+.email-signup button{
+    width:200px;
+    font-size: 25px;
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    border-radius:4px;
+    height: 50px;
+color:#fff;
+}
+.features{
+    font-size:22px;
+    padding:50px 12%;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+padding-bottom: 30px;
+margin-bottom: 50px;
+
+
+}
+.text-col{flex-basis:50%;
+    margin-bottom:20px;
+
+
+}
+.image-col {
+    flex-basis:50%;
+    margin-bottom:20px;
+
+
+}
+.img-col img{
+    width:90%;
+    display: block;
+margin:auto;
+}
+.text-col h1{
+    font-weight:600;
+    margin-bottom:20px;
+}
+.faq{
+    padding-top:10px 12%;
+    text-align:center;
+
+}
+.faq h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width:1200px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+
+}
+.accordian li label{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    font-size:30px;
+    font-weight:500;
+    background: #303030;
+    margin-bottom:2px;
+    cursor: pointer;
+    position:relative;
+}
+label::after{
+    content: '+';
+    font-size:34px;
+    position:absolute;
+    right:20px;
+    transition:transform 0.5s;
+}
+.accordian input{
+    display:none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding:0px 20px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s,padding 0.5s;
+    font-size: larger;
+}
+.accordian input[type=radio]:checked +label +.content{
+max-height:600px;
+padding:30px 20px;
+
+}
+.accordian input[type=radio]:checked+label::after{
+    transform: rotate(135deg);
+}
+h3{
+    text-align: center;
+    font-size:25px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.footer{
+    padding:50px 15% 10px;
+    border-top:6px solid #333;
+    color:#777;
+    margin-top: 20px;
+}
+.footer h2{
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+.footer .col{
+    flex-basis:25%;
+    flex-grow:1;
+    margin-bottom:20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color:#777;
+    font-size:14px;
+    margin-bottom:10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding:10px 0;
+
+}
+.language-btn{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0%;
+    display: inline-flex;
+    background: transparent;
+    border:1px solid #fff;
+    padding:10px;
+    border-radius: 4px;
+}
+.copyright-text{
+    font-size: 20px;
+    padding-top:20px;
+}
+
